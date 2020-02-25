@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <h2>Log In Here</h2>
+    <div class="social Media">
+        <button><a href="#"><i class="fa fa-facebook h"></i>Facebook</a></button>
+        <button><a href="#"><i class="fa fa-twitter"></i>Twitter</a></button>
+    </div>
+    <form #std="ngForm" ngSubmit="(std)">
+        <div class="form-group">
+            <label for="sid">Student-Id:</label>
+            <input [(ngModel)]="sid" class="form-control" type="text" class="form-control" name="sid" id="sid"><br></div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input [(ngModel)]="password" class="form-control" type="password" class="form-control" name="password" id="password"><br></div>
+
+
+        <button type="submit" id="z" (click)="onLogin(std)" class="btn btn-info">Log-in</button>
+        <p>Not a User?<a routerLink="/register">Sign-Up</a></p>
+
+
+    </form>
+
+</div>

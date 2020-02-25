@@ -1,0 +1,104 @@
+.background {
+    background-color: skyblue;
+    height: 100vh;
+    width: 100vw;
+    font-weight: 500;
+}
+
+.signup {
+    background-color: rgb(252, 245, 245);
+    width: max-content;
+    border-radius: 9px;
+}
+
+.all {
+    z-index: 1;
+    position: relative;
+    top: 70px;
+    left: 135px;
+    width: max-content;
+}
+
+.head {
+    padding: 16px 8px 8px 14px;
+    background-color: white;
+    color: #293250;
+    border-radius: 4px;
+    font-weight: 100;
+}
+
+.form-group {
+    padding: 0px 20px 25px 20px;
+}
+
+.input {
+    margin-top: 10px;
+    height: 35px;
+    width: 600px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+::placeholder {
+    font-size: 13px;
+    opacity: 0.4;
+    padding-left: 0px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    font-size: 13px;
+}
+
+.cb {
+    opacity: 0.4;
+}
+
+.signup {
+    position: relative;
+    top: 50px;
+    left: 275px;
+}
+
+input.sp::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input.sp::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+}
+
+input.sp::-webkit-datetime-edit-month-field {
+    -webkit-appearance: none;
+}
+
+input.sp::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+}
+
+input.sp::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+}
+
+input.ep::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input.ep::-webkit-datetime-edit-text {
+    -webkit-appearance: none;
+}
+
+input.ep::-webkit-datetime-edit-month-field {
+    -webkit-appearance: none;
+}
+
+input.ep::-webkit-datetime-edit-day-field {
+    -webkit-appearance: none;
+}
+
+input.ep::-webkit-datetime-edit-year-field {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,38 @@
+<div class="disproj">
+  <h1>Project List</h1>
+  <table class="table table-bordered table-responsive-md table-striped ">
+    <thead>
+      <tr>
+        <th scope="col">ProjectID</th>
+        <th scope="col">Title</th>
+        <th scope="col">Category</th>
+        <th scope="col">Team</th>
+        <th scope="col">Description</th>
+        <th scope="col">Technology</th>
+        <th scope="col">Start-Date</th>
+        <th scope="col">End-Date</th>
+        <th scope="col">Update</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of projects" class="table-info">
+        <td>{{p.pid}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.cat}}</td>
+        <td>{{p.team}}</td>
+        <td>{{p.desc}}</td>
+        <td>{{p.tech}}</td>
+        <td>{{p.sdate | date:'dd/MM/yyyy'  }}</td>
+        <td>{{p.edate | date:'dd/MM/yyyy'  }}</td>
+
+
+        <td><button (click)="onUpdate(p.pid)" style="font-size:24px"><i class="fa fa-edit"></i></button></td>
+        <td><button (click)="onDelete(p.pid)" style="font-size:24px"><i class="fa fa-trash-o"></i></button></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+  <button class="btn btn-primary" (click)="onAddProject()">Add Project</button>
+</div>

@@ -1,0 +1,44 @@
+<div class="background">
+    <div class="all">
+        <div class="signup">
+            <form #pro="ngForm" (ngSubmit)="onAddPro(pro)" class="form">
+                <div class="head">
+                    <h6>ADD PROJECT</h6>
+                </div>
+
+                <div class="form-group">
+                    <input ngModel type="text" class="input" id="pid" placeholder="PID" name="pid">
+                    <br>
+                    <input ngModel type="text" class="input" id="title" placeholder="TITLE" name="title">
+                    <br>
+                    <select ngModel class="input" name="cat">
+                        <option value="" selected disabled hidden>
+                            choose a Category
+                        </option>
+                        <option value="education">Education</option>
+                        <option value="AI">Agriculture</option>
+                        <option value="blockchain">Blockchain</option>
+                        <option value="angular">Angular</option>
+                    </select>
+                    <br>
+                    <textarea ngModel name="team" class="input tx" rows="0" cols="50" placeholder="TEAM"></textarea>
+                    <br>
+                    <textarea ngModel name="desc" class="input tx" rows="10" cols="50"
+                        placeholder="DESCRIPTION"></textarea>
+                    <br>
+                    <textarea ngModel name="tech" class="input tx" rows="10" cols="50"
+                        placeholder="TECHNOLOGY"></textarea>
+                    <br>
+                    <input ngModel class="input sp" type="text" onfocus="(this.type='date')" name="sdate" id="sdate"
+                        placeholder="START DATE">
+                    <br>
+                    <input ngModel class="input ep" type="text" onfocus="(this.type='date')" name="edate" id="edate"
+                        placeholder="END DATE"><br>
+                    <button type="submit" class="btn input">ADD PROJECT</button>
+                    <!-- routerLink='listproject' -->
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>

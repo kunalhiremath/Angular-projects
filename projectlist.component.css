@@ -1,0 +1,69 @@
+.background{
+  background-color:skyblue;
+  width: 100%;
+  height: 100vh;
+  font-weight: 500;
+ 
+}
+.signup{
+  background-color: rgb(252, 245, 245);
+  position: relative;
+  top: 30px;
+  left: 100px;
+  width: max-content;
+  border-radius: 9px;
+}
+
+
+.all{
+  z-index: 1;
+  position: relative;
+  top: 80px;
+  left: 290px;
+  width: max-content;
+}
+
+.head{
+  padding: 16px 8px 8px 14px;
+  background-color: white;
+  color: #293250 ;
+  border-radius: 4px;
+  font-weight: 100;
+
+}
+.form-group{
+ 
+  padding: 0px 20px 25px 20px;
+}
+th,td{
+  text-align: center;
+}
+.input{
+  margin-top: 10px;
+  height: 35px;
+  width:600px;
+  border: none;
+  border-radius: 3px;
+
+}
+::placeholder{
+  font-size: 13px;
+  opacity: 0.4;
+  padding-left: 5px;
+}
+.btn3{
+padding-left: 500px;
+}
+.btn{
+  background-color: #293250 ;
+  color: white;
+  font-size: 13px;
+  margin-left: 1px;
+  width: 140px;
+  margin: 5px;
+}
+.cb{
+  opacity: 0.4;
+}
+
+

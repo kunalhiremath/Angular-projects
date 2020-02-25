@@ -1,0 +1,46 @@
+<div class="background">
+  <div class="all">
+    <div class="signup">
+      <form action="/action_page.php" class=" form">
+        <div class="head">
+          <h6>LIST OF PROJECTS</h6>
+        </div>
+
+
+        <div>
+          <table class="table table-striped table-dark">
+            <thead>
+              <tr>
+                <th scope="col">PID</th>
+                <th scope="col">TITLE</th>
+                <th scope="col">TEAM</th>
+                <th scope="col">CATEGORY</th>
+                <th scope="col">DESCRIPTION</th>
+                <th scope="col">TECHNOLOGY</th>
+                <th scope="col">START DATE</th>
+                <th scope="col">END DATE</th>
+
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr *ngFor='let p of pros;' style="cursor:pointer" (click)="onClick(p.title)" >
+                <td>{{p.pid}}</td>
+                <td>{{p.title}}</td>
+                <td>{{p.cat}}</td>
+                <td>{{p.team}}</td>
+                <td>{{p.desc}}</td>
+                <td>{{p.tech}}</td>
+                <td>{{p.sdate}}</td>
+                <td>{{p.edate}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </form>
+      <div class="btn3">
+        <button type="submit" class="btn" routerLink='/displayprojects'>ADD NEW PROJECT</button>
+       
+      </div>
+    </div>
+  </div>

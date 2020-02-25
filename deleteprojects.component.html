@@ -1,0 +1,29 @@
+
+
+<div class="updproj">
+    <h1>Delete Project</h1>
+ <form  #pro="ngForm" (ngSubmit)="(pro)">
+     <div class="form-group">
+         <label for="pid">Project-ID</label>
+         <input [(ngModel)]='pid'  type="text" id="pid" class="form-control" name="pid" >
+     </div>
+     <div class="form-group">
+         <label for="title">Title</label>
+         <input [(ngModel)]="title" type="text" id="title" class="form-control" name="title" >
+     </div>
+     <div class="form-group">
+         <label for="cat">Category</label>
+         <input [(ngModel)]="cat" type="text" id="cat" class="form-control" name="cat" >
+     </div>
+     <div class="form-group">
+         <label for="team">Team</label>
+         <input [(ngModel)]="team" type="text" id="team" class="form-control" name="team">
+     </div>
+     <div class="form-group">
+         <label for="desc">Description</label>
+         <input [(ngModel)]="desc" type="text" id="desc" class="form-control" name="desc" >
+     </div> 
+     <button type="submit" (click)="onDelete(pro)" class="btn btn-dark">Delete </button>
+ </form>
+ </div>
+    
